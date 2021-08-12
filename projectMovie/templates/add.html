@@ -1,0 +1,64 @@
+{% extends 'base2.html' %}
+{% block body %}
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+<!--    <input type="text" name="name" placeholder="Enter movie name">-->
+
+<!--    <input type="text" name="desc" placeholder="Enter movie description">-->
+
+<!--    <input type="text" name="year" placeholder="Enter movie year of release">-->
+
+<!--    <input type="file" name="img">-->
+
+
+
+<div class="container">
+    <div class="row">
+
+
+    <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">🎞</span>
+  </div>
+  <input type="text" class="form-control" name="name" placeholder="Enter Movie Name" aria-label="Username" aria-describedby="basic-addon1" >
+
+</div>
+    <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">🎞</span>
+  </div>
+  <input type="text" class="form-control" name="year" placeholder="Enter Release Year" aria-label="Username" aria-describedby="basic-addon1" >
+
+</div>
+ <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">🎞</span>
+  </div>
+  <input type="file" class="form-control" name="img" placeholder="Enter Images" aria-label="Username" aria-describedby="basic-addon1" >
+
+</div>
+   <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">🎞</span>
+  </div>
+  <input type="text" class="form-control" name="ratings" placeholder="Enter Movie Ratings" aria-label="Username" aria-describedby="basic-addon1" >
+
+</div>
+
+
+
+<div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Movie Summary</span>
+  </div>
+  <textarea class="form-control" name="desc" aria-label="With textarea"></textarea>
+
+</div>
+
+
+</div>
+    <input type="submit" class="btn btn-dark">
+    </div>
+</div>
+</form>
+{% endblock %}
